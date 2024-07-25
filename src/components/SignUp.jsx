@@ -10,11 +10,12 @@ const SignUp = () => {
         e.preventDefault();
 
         // Validate input fields
-        if (email && password) {
+        if (email && password.length>5) {
             navigate('/Home'); 
         } else {
-            alert('Please fill in all fields');
+            alert('Please fill in all fields Password must be atlest 5 characters');
         }
+
     };
     
     
