@@ -7,14 +7,17 @@ const Content = () => {
   const selectedContinent = useSelector((state) => state.continent);
 
   useEffect(() => {
+
     fetch('https://restcountries.com/v2/all?fields=name,region,flag')
       .then((response) => response.json())
       .then((data) => setCountries(data));
+
   }, []);
 
   const filteredCountries = selectedContinent === 'All'
     ? countries
     : countries.filter((country) => country.region === selectedContinent);
+
 
   return (
     <div className="container mx-auto  p-4 mt-10">
