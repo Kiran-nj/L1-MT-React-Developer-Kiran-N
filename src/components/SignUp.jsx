@@ -19,7 +19,7 @@ const SignUp = () => {
     
     
     return (
-    <div className='w-full h-screen flex'>
+    <div className='w-full h-[96vh] flex'>
         <div className='w-full md:w-[60%]  flex items-center justify-center min-h-screen'>
 
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded ">
